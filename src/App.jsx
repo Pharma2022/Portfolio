@@ -7,19 +7,32 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Work from './components/Work'
 import Contact from './components/Contact'
-
+import { Route,Routes } from 'react-router-dom'
 function App() {
 
 
   return (
-    <div className="app">
+    < >
       <Navbar/>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Work/>
-      <Contact/>
-    </div>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+      </Routes>
+      <Routes>
+        <Route path='/about' element={<About/>} />
+      </Routes>
+      <Routes>
+        <Route path='/skills' element={<Skills/>} />
+      </Routes>
+      <Routes>
+        <Route path='/work' element={<Work/>} />
+      </Routes>
+      <Routes>
+        <Route path='/contact' element={<Contact/>} />
+      </Routes>
+      
+      
+
+    </>
   )
 }
 

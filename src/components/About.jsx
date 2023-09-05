@@ -17,8 +17,7 @@ const About = () => {
               <p>Hi. I'm Shah, nice to meet you. Please take a look around.</p>
             </div>
             <div>
-              <p> As Jim Carey says in this speech, life doesn't happen to you, it happens for you. I like 
-                to build apps that alters the world around me. I want to transform the world of healthcare in every way imaginable. 
+              <p>  I like to build applications that alter the world around me. I want to transform the world of healthcare in every way imaginable. If you open the door in your mind, when it opens in real life you just walk through. 
                 </p>  
             </div>
           </div>
