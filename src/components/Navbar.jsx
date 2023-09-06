@@ -1,10 +1,36 @@
 import React, { useState } from 'react'
-import Logo from '../assets/logo1.png'
+
 
 import {FaBars,FaTimes,FaLinkedin,FaGithub, FaFacebook} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
+import { nanoid } from 'nanoid'
+
+
+const NavLink=({children,isMobile,to=`/`,onClick=()=>{}})=>{
+    return (
+        <li  className={`py-6  ${isMobile?"text-4xl":""}`}>
+        <Link onClick={onClick}  to={to} >
+            {children}
+        </Link>
+    </li>
+    )
+
+}
+
+const SocialIcon=({children,bgColor,href='/'})=>{
+    return (
+        <li className={ `${styles.socialIcon} ${bgColor}`}>
+             <a className={styles.socialLink} href={href}>
+                {children}
+             </a>
+        </li>
+    )
+
+}
+
+
 const Navbar = () => {
 
 
@@ -12,41 +38,18 @@ const Navbar = () => {
 
     const handleClick=()=>setNav(prev=>!prev)
 
-
+    const navArr=[{children:'Home',to:'/'},{children:'About',to:'/about'},{children:'Skills',to:'/skills'},{children:'Work',to:'/work'},{children:'Contact',to:'/contact'}]
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+    <div className={`fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300`}>
         <div>
-            <img src={Logo} alt="Logo Image" style={{width: "50px"}} />
+            
+            <h2 className={`text-pink-500 font-semibold italic`}>Shah Aowal</h2>
         </div>
         
         {/* Menu */}
  
             <ul className='hidden md:flex'>
-                <li className='py-6'>
-                    <Link  to="/" >
-                        Home
-                    </Link>
-                </li>
-                <li className='py-6'>
-                    <Link  to="/about" >
-                        About
-                    </Link>
-                </li>
-                <li className='py-6'>
-                    <Link  to="/skills" >
-                        Skills
-                    </Link>
-                </li>
-                <li className='py-6'>
-                    <Link  to="/work" >
-                        Work
-                    </Link>
-                </li>
-                <li className='py-6'>
-                    <Link  to="/contact" >
-                        Contact
-                    </Link>
-                </li>
+                {navArr.map(({children,to})=><NavLink key={nanoid()} to={to}>{children}</NavLink>)}
                
             </ul>
    
@@ -57,58 +60,26 @@ const Navbar = () => {
      
         {/* mobile menu */}
         <ul className={nav? 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center' :'hidden'}>
-                <li  className='py-6 text-4xl'>
-                    <Link onClick={handleClick}  to="/" >
-                        Home
-                    </Link>
-                </li>
-                <li  className='py-6 text-4xl'>
-                    <Link onClick={handleClick}  to="/about" >
-                        About
-                    </Link>
-                </li>
-                <li  className='py-6 text-4xl'>
-                    <Link onClick={handleClick}  to="/skills" >
-                        Skills
-                    </Link>
-                </li>
-                <li  className='py-6 text-4xl'>
-                    <Link onClick={handleClick}  to="/work" >
-                        Work
-                    </Link>
-                </li>
-                <li  className='py-6 text-4xl'>
-                    <Link onClick={handleClick}  to="/contact" >
-                        Contact
-                    </Link>
-                </li>
+        {navArr.map(({children,to})=><NavLink key={nanoid()} to={to} isMobile={true} onClick={handleClick}>{children}</NavLink>)}
+               
         </ul>
 
 
         {/* Social icons */}
         <div className='hidden lg:flex fixed flex-col top-[35%] left-0' >
             <ul>
-                <li className={ `${styles.socialIcon} bg-blue-600`}>
-                    <a className={styles.socialLink} href="/">
+                <SocialIcon bgColor={`bg-blue-600`}>
                     Linkedin <FaLinkedin size={30}/>
-                    </a>
-                </li>
-                <li className={`${styles.socialIcon} bg-[#333333]`}>
-                    <a className={styles.socialLink} href="/">
+                </SocialIcon>
+                <SocialIcon bgColor={`bg-[#333333]`}>
                     Github <FaGithub size={30}/>
-                    </a>
-                </li>
-                <li className={`${styles.socialIcon} bg-[#6fc2b0]`}>
-                    <a className={styles.socialLink} href="/">
+                </SocialIcon>
+               <SocialIcon bgColor={`bg-[#6fc2b0]`}>
                     Email <HiOutlineMail size={30}/>
-                    </a>
-                </li>
-                <li className={`${styles.socialIcon} bg-[#565f69]`}>
-                    <a className={styles.socialLink} href="/">
+               </SocialIcon>
+                <SocialIcon>
                     CV <BsFillPersonLinesFill size={30}/>
-                    </a>
-                </li>
-               
+                </SocialIcon> 
             </ul>
 
         </div>
@@ -125,3 +96,5 @@ const styles= {
     socialIcon:`w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300`,
     socialLink:`flex justify-between items-center w-full text-gray-300`
 }
+
+
