@@ -1,5 +1,6 @@
 import React from 'react'
 import WorkImg from '../assets/workImg.jpeg'
+import Basketball from '../assets/basketball-scorecard.png'
 const Work = () => {
   return (
     <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
@@ -11,21 +12,21 @@ const Work = () => {
             </div>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
                 {/* Grid Item */}
-                <div style={{backgroundImage:`url(${WorkImg})`}}  
+                <div style={{backgroundImage:`url(${Basketball})`}}  
                     className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                    
                    {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-80'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
+                            Basketball ScoreBoard
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="/">
+                            <a target='_blank' href="https://shahs-basketball-score-board.netlify.app/">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                                     Demo
                                 </button>
                             </a>
-                            <a href="/">
+                            <a target='_blank' href="https://github.com/Pharma2022/basketball-score-board">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                                     Code
                                 </button>
@@ -43,10 +44,10 @@ const Work = () => {
                             React JS Application
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="/">
+                            <a target='_blank' href="/">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a href="/">
+                            <a target='_blank' href="/">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
@@ -62,10 +63,10 @@ const Work = () => {
                             React JS Application
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="/">
+                            <a target='_blank' href="/">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a href="/">
+                            <a target='_blank' href="/">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>

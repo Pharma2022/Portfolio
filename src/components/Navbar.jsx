@@ -22,7 +22,7 @@ const NavLink=({children,isMobile,to=`/`,onClick=()=>{}})=>{
 const SocialIcon=({children,bgColor,href='/'})=>{
     return (
         <li className={ `${styles.socialIcon} ${bgColor}`}>
-             <a className={styles.socialLink} href={href}>
+             <a className={styles.socialLink} target='_blank' href={href}>
                 {children}
              </a>
         </li>
@@ -68,10 +68,10 @@ const Navbar = () => {
         {/* Social icons */}
         <div className='hidden lg:flex fixed flex-col top-[35%] left-0' >
             <ul>
-                <SocialIcon bgColor={`bg-blue-600`}>
+                <SocialIcon bgColor={`bg-blue-600`} href='https://www.linkedin.com/in/shah-aowal-17b59653/'>
                     Linkedin <FaLinkedin size={30}/>
                 </SocialIcon>
-                <SocialIcon bgColor={`bg-[#333333]`}>
+                <SocialIcon href='https://github.com/Pharma2022' bgColor={`bg-[#333333]`}>
                     Github <FaGithub size={30}/>
                 </SocialIcon>
                <SocialIcon bgColor={`bg-[#6fc2b0]`}>
