@@ -4,16 +4,17 @@ import RestaurantImg from '../assets/restaurant.png'
 import Basketball from '../assets/basketball-scorecard.png'
 import PasswordGenerator from '../assets/password-generator.png'
 import ViewCodeBtn from './Buttons/ViewCodeBtn'
+import UnitConverter from '../assets/unitConverter.png'
 const Work = () => {
   return (
-    <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
+    <div name='work' className='w-full h-full md:h-screen text-gray-300 bg-[#0a192f]'>
 
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>Work</p>
                 <p className='py-6'>Check out some of my recent work</p>
             </div>
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+            <div className='py-4 grid sm:grid-cols-2 md:grid-cols-3 gap-4 '>
                 {/* Grid Item */}
                 <div style={{backgroundImage:`url(${Basketball})`}}  
                     className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
@@ -75,7 +76,7 @@ const Work = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{backgroundImage:`url(${WorkImg})`}}  
+                <div style={{backgroundImage:`url(${UnitConverter})`}}  
                     className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                    
                    
@@ -85,10 +86,10 @@ const Work = () => {
                             React JS Application
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="/">
+                            <a href="http://shahs-unit-converter.netlify.app/">
                                 <ViewCodeBtn>Demo</ViewCodeBtn>
                             </a>
-                            <a href="/">
+                            <a href="https://github.com/Pharma2022/unitConverter/">
                                 <ViewCodeBtn>Code</ViewCodeBtn>
                             </a>
                         </div>
