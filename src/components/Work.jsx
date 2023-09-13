@@ -1,6 +1,9 @@
 import React from 'react'
 import WorkImg from '../assets/workImg.jpeg'
+import RestaurantImg from '../assets/restaurant.png'
 import Basketball from '../assets/basketball-scorecard.png'
+import PasswordGenerator from '../assets/password-generator.png'
+import ViewCodeBtn from './Buttons/ViewCodeBtn'
 const Work = () => {
   return (
     <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
@@ -22,71 +25,52 @@ const Work = () => {
                         </span>
                         <div className='pt-8 text-center'>
                             <a target='_blank' href="https://shahs-basketball-score-board.netlify.app/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                                    Demo
-                                </button>
+                                <ViewCodeBtn>
+                                Demo
+                                </ViewCodeBtn>
                             </a>
                             <a target='_blank' href="https://github.com/Pharma2022/basketball-score-board">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                                    Code
-                                </button>
+                                <ViewCodeBtn>
+                                Code
+                                </ViewCodeBtn>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div style={{backgroundImage:`url(${WorkImg})`}}  
+                <div style={{backgroundImage:`url(${PasswordGenerator})`}}  
                     className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                    
                    
                    {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-80'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
+                            Password Generator
                         </span>
                         <div className='pt-8 text-center'>
-                            <a target='_blank' href="/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            <a target='_blank' href="https://shahs-password-generator.netlify.app/">
+                                <ViewCodeBtn>Demo</ViewCodeBtn>
                             </a>
-                            <a target='_blank' href="/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            <a target='_blank' href="https://github.com/Pharma2022/password-generator/">
+                                <ViewCodeBtn>Code</ViewCodeBtn>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div style={{backgroundImage:`url(${WorkImg})`}}  
+                <div style={{backgroundImage:`url(${RestaurantImg})`}}  
                     className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                    
                    
                    {/* Hover Effects */}
                     <div className='opacity-0 group-hover:opacity-80'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
+                            Shah's Diner
                         </span>
                         <div className='pt-8 text-center'>
-                            <a target='_blank' href="/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            <a target='_blank' href="https://shahs-diner.netlify.app">
+                                <ViewCodeBtn>Demo</ViewCodeBtn>
                             </a>
-                            <a target='_blank' href="/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div style={{backgroundImage:`url(${WorkImg})`}}  
-                    className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                   
-                   
-                   {/* Hover Effects */}
-                    <div className='opacity-0 group-hover:opacity-80'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
-                        </span>
-                        <div className='pt-8 text-center'>
-                            <a href="/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                            </a>
-                            <a href="/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            <a target='_blank' href="https://github.com/Pharma2022/restaurant-order-react">
+                                <ViewCodeBtn>Code</ViewCodeBtn>
                             </a>
                         </div>
                     </div>
@@ -102,10 +86,10 @@ const Work = () => {
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                                <ViewCodeBtn>Demo</ViewCodeBtn>
                             </a>
                             <a href="/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                                <ViewCodeBtn>Code</ViewCodeBtn>
                             </a>
                         </div>
                     </div>
@@ -121,10 +105,29 @@ const Work = () => {
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                                <ViewCodeBtn>Demo</ViewCodeBtn>
                             </a>
                             <a href="/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                                <ViewCodeBtn>Code</ViewCodeBtn>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style={{backgroundImage:`url(${WorkImg})`}}  
+                    className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                   
+                   
+                   {/* Hover Effects */}
+                    <div className='opacity-0 group-hover:opacity-80'>
+                        <span className='text-2xl font-bold text-white tracking-wider'>
+                            React JS Application
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="/">
+                                <ViewCodeBtn>Demo</ViewCodeBtn>
+                            </a>
+                            <a href="/">
+                                <ViewCodeBtn>Code</ViewCodeBtn>
                             </a>
                         </div>
                     </div>
