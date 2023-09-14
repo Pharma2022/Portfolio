@@ -12,7 +12,7 @@ const WorkLink = ({name,github,netlify,img}) => {
    
    {/* Hover Effects */}
     <div className='opacity-0 group-hover:opacity-80'>
-        <span className='text-2xl font-bold text-white tracking-wider'>
+        <span className='text-2xl font-bold text-center text-white tracking-wider'>
             {name}
         </span>
         <div className='pt-8 text-center'>

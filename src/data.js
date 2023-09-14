@@ -21,7 +21,7 @@ img:`basketball-scorecard.png`
     github:'https://github.com/Pharma2022/unitConverter/',
     img:`unitConverter.png`},
 {
-    name:'Quizzical',
+    name:'Get Quizzical',
     netlify:'https://get-quizzical.netlify.app/',
     github:'https://github.com/Pharma2022/Quizzical',
     img:`quizzical.png`},
