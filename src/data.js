@@ -1,35 +1,42 @@
+
+import Basketball from '../public/workImg/basketball-scorecard.png'
+import Password from '../public/workImg/password-generator.png'
+import Restaurant from '../public/workImg/restaurant.png'
+import UnitConverter from '../public/workImg/unitConverter.png'
+import Quizzical from '../public/workImg/quizzical.png'
+import JAC from '../public/workImg/jac-codes.png'
 export const portfolioArr=[
 {name:'Basketball ScoreBoard',
 github:'https://github.com/Pharma2022/basketball-score-board',
 netlify:'https://shahs-basketball-score-board.netlify.app/',
-img:`basketball-scorecard.png`
+img:Basketball
 },
 {
     name:'Password Generator',
     netlify:'https://shahs-password-generator.netlify.app/',
     github:'https://github.com/Pharma2022/password-generator/',
-    img:`password-generator.png`
+    img:Password
 },
 {
     name:`Shah's Diner`,
     netlify:'https://shahs-diner.netlify.app/',
     github:'https://github.com/Pharma2022/restaurant-order-react',
-    img:`restaurant.png`},
+    img:Restaurant},
 {
     name:'Unit Converter',
     netlify:'http://shahs-unit-converter.netlify.app/',
     github:'https://github.com/Pharma2022/unitConverter/',
-    img:`unitConverter.png`},
+    img:UnitConverter},
 {
     name:'Get Quizzical',
     netlify:'https://get-quizzical.netlify.app/',
     github:'https://github.com/Pharma2022/Quizzical',
-    img:`quizzical.png`},
+    img:Quizzical},
 {
     name:'Dispensary Shortcodes',
     netlify:'https://dispensing-shortcodes.netlify.app/',
     github:'https://github.com/Pharma2022/barcode-scanner',
-    img:`jac-codes.png`
+    img:JAC
 },
 
 
