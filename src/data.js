@@ -5,6 +5,7 @@ import Restaurant from '../public/workImg/restaurant.png'
 import UnitConverter from '../public/workImg/unitConverter.png'
 import Quizzical from '../public/workImg/quizzical.png'
 import JAC from '../public/workImg/jac-codes.png'
+import ColorPicker from '../public/workImg/color-picker.png'
 export const portfolioArr=[
 {name:'Basketball ScoreBoard',
 github:'https://github.com/Pharma2022/basketball-score-board',
@@ -31,7 +32,14 @@ img:Basketball
     name:'Get Quizzical',
     netlify:'https://get-quizzical.netlify.app/',
     github:'https://github.com/Pharma2022/Quizzical',
-    img:Quizzical},
+    img:Quizzical
+},
+{
+    name:'Color Scheme Picker',
+    netlify:'https://shahs-color-picker.netlify.app/',
+    github:'https://github.com/Pharma2022/color-scheme-picker',
+    img:ColorPicker
+},
 {
     name:'Dispensary Shortcodes',
     netlify:'https://dispensing-shortcodes.netlify.app/',
