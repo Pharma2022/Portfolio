@@ -1,11 +1,12 @@
 
-import Basketball from '../public/workImg/basketball-scorecard.png'
-import Password from '../public/workImg/password-generator.png'
-import Restaurant from '../public/workImg/restaurant.png'
-import UnitConverter from '../public/workImg/unitConverter.png'
-import Quizzical from '../public/workImg/quizzical.png'
-import JAC from '../public/workImg/jac-codes.png'
-import ColorPicker from '../public/workImg/color-picker.png'
+import Basketball from './assets/workImg/basketball-scorecard.png'
+import Password from './assets/workImg/password-generator.png'
+import Restaurant from './assets/workImg/restaurant.png'
+import UnitConverter from './assets/workImg/unitConverter.png'
+import Quizzical from './assets/workImg/quizzical.png'
+import JAC from './assets/workImg/jac-codes.png'
+import ColorPicker from './assets/workImg/color-picker.png'
+import Journal from './assets/workImg/journal.png'
 export const portfolioArr=[
 {name:'Basketball ScoreBoard',
 github:'https://github.com/Pharma2022/basketball-score-board',
@@ -46,6 +47,12 @@ img:Basketball
     github:'https://github.com/Pharma2022/barcode-scanner',
     img:JAC
 },
+{
+    name:'Learning Journal',
+    netlify:'https://shahs-journal.netlify.app',
+    github:"https://github.com/Pharma2022/learning-journal/",
+    img:Journal
+}
 
 
 ]
