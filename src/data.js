@@ -4,6 +4,7 @@ import Password from './assets/workImg/password-generator.png'
 import Restaurant from './assets/workImg/restaurant.png'
 import UnitConverter from './assets/workImg/unitConverter.png'
 import Quizzical from './assets/workImg/quizzical.png'
+import Medrec from './assets/workImg/medrec.png'
 import JAC from './assets/workImg/jac-codes.png'
 import ColorPicker from './assets/workImg/color-picker.png'
 import Journal from './assets/workImg/journal.png'
@@ -52,6 +53,13 @@ img:Basketball
     netlify:'https://shahs-journal.netlify.app',
     github:"https://github.com/Pharma2022/learning-journal/",
     img:Journal
+},
+{
+    name:'Medrectool Pandas',
+    netlify:'https://colab.research.google.com/github/Pharma2022/medrectool-analytics/blob/main/MedRecAnalysis.ipynb#scrollTo=IGFtE7viaCkv'
+    ,github:'https://github.com/Pharma2022/medrectool-analytics',
+    img:Medrec
+    
 }
 
 

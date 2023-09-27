@@ -10,8 +10,8 @@ import { nanoid } from 'nanoid'
 
 const NavLink=({children,isMobile,to=`/`,onClick=()=>{}})=>{
     return (
-        <li  className={`py-6  ${isMobile?"text-4xl":""}`}>
-        <Link onClick={onClick}  to={to} >
+        <li  className={`py-6  ${isMobile?"text-4xl":""} hover:scale-110`}>
+        <Link onClick={onClick} className=' hover: border-pink-600 hover:border-b-4 '  to={to} >
             {children}
         </Link>
     </li>
